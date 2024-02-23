@@ -333,7 +333,7 @@ require('lazy').setup({
       -- many different aspects of Neovim, your workspace, LSP, and more!
       --
       -- The easiest way to use Telescope, is to start by doing something like:
-      --  :Telescope help_tags
+  { import = 'custom.plugins' },
       --
       -- After running this command, a window will open up and you're able to
       -- type in the prompt window. You'll see a list of `help_tags` options and
