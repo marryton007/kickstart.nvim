@@ -333,7 +333,6 @@ require('lazy').setup({
       -- many different aspects of Neovim, your workspace, LSP, and more!
       --
       -- The easiest way to use Telescope, is to start by doing something like:
-  { import = 'custom.plugins' },
       --
       -- After running this command, a window will open up and you're able to
       -- type in the prompt window. You'll see a list of `help_tags` options and
@@ -885,7 +884,7 @@ require('lazy').setup({
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
   --    For additional information, see `:help lazy.nvim-lazy.nvim-structuring-your-plugins`
-  -- { import = 'custom.plugins' },
+  { import = 'custom.plugins' },
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
