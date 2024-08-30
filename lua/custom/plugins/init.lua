@@ -2,6 +2,6 @@
 --  I promise not to create any merge conflicts in this directory :)
 --
 -- See the kickstart.nvim README for more information
-vim.o.mouse = ''
-return {
-}
+vim.opt.mouse = ''
+vim.g.have_nerd_font = true
+return {}
