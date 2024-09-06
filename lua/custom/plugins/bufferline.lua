@@ -21,5 +21,6 @@ return {
     vim.keymap.set('n', '<leader>7', '<cmd>BufferLineGoToBuffer 7<cr>', { desc = 'jump to buffer 7'})
     vim.keymap.set('n', '<leader>8', '<cmd>BufferLineGoToBuffer 8<cr>', { desc = 'jump to buffer 8'})
     vim.keymap.set('n', '<leader>9', '<cmd>BufferLineGoToBuffer 9<cr>', { desc = 'jump to buffer 9'})
+    vim.keymap.set('n', '<leader>bd', '<cmd>bdelete %<cr>', { desc = 'close current buffer'})
   end,
 }
