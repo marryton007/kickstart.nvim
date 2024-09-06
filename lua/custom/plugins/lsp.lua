@@ -1,6 +1,6 @@
 local servers = {
   ccls = {},
-  svls = {},
+  -- svls = {},
   zls = {},
 }
 
