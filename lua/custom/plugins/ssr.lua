@@ -4,6 +4,6 @@ return {
   -- Calling setup is optional.
   config = function()
     require("ssr").setup { }
-    vim.keymap.set({ "n", "x" }, "<leader>sr", function() require("ssr").open() end)
+    vim.keymap.set({ "n", "x" }, "<leader>rr", function() require("ssr").open() end, { desc = 'structural search and replace' })
   end
 }
