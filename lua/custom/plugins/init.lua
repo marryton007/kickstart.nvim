@@ -4,4 +4,7 @@
 -- See the kickstart.nvim README for more information
 vim.opt.mouse = ''
 vim.g.have_nerd_font = true
+vim.schedule(function()
+  vim.opt.clipboard = ''
+end)
 return {}
