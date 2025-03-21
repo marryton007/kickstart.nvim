@@ -1,5 +1,6 @@
 local servers = {
   ccls = {},
+  pyright = {},
   -- svls = {},
   zls = {},
 }
