@@ -477,7 +477,6 @@ require('lazy').setup({
   },
   {
     -- Main LSP Configuration
-    -- Main LSP Configuration
     'neovim/nvim-lspconfig',
     dependencies = {
       -- Automatically install LSPs and related tools to stdpath for Neovim
@@ -709,6 +708,7 @@ require('lazy').setup({
         -- certain features of an LSP (for example, turning off formatting for ts_ls)
         config.capabilities = vim.tbl_deep_extend('force', {}, capabilities, config.capabilities or {})
         vim.lsp.config(name, config)
+        vim.lsp.enable(name)
       end
 
       -- Ensure the servers and tools above are installed
