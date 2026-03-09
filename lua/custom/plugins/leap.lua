@@ -1,12 +1,11 @@
 return {
   {
-    "ggandor/leap.nvim",
+    url = 'https://codeberg.org/andyg/leap.nvim',
     lazy = true,
-    event = "BufReadPost",
+    event = 'BufReadPost',
     config = function()
-      require("leap").opts.highlight_unlabeled_phase_one_targets = true
-      vim.keymap.set({ "x", "o", "n" }, "s", "<Plug>(leap-forward-to)")
-      vim.keymap.set({ "x", "o", "n" }, "S", "<Plug>(leap-backward-to)")
+      vim.keymap.set({ 'n', 'x', 'o' }, 's', '<Plug>(leap)')
+      vim.keymap.set('n', 'S', '<Plug>(leap-from-window)')
     end,
   },
 }
